@@ -1,0 +1,107 @@
+.container-header-slider {
+    display: flex;
+    justify-content: center;
+}
+
+.header-slider {
+    display: flex !important;
+    text-align: start;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 110px;
+    background: var(--gradient-color-section-1);
+    border-radius: 90px;
+}
+
+.header-slider .content-slider {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.header-slider .content-slider h3 {
+    font-size: 15px;
+}
+
+.header-slider .content-slider .icon-slider-header {
+    font-size: 50px;
+    color: var(--icon-color);
+}
+
+.header-slider .slick-prev:before {
+    margin-left: 30px;
+    font-size: 25px;
+}
+
+.header-slider .slick-next:before {
+    margin-left: -60px;
+    font-size: 25px;
+}
+
+.desktop-text-header-slider {
+    display: none;
+}
+
+.separation-desktop {
+    display: none;
+}
+
+@media screen and (min-width: 905px) {
+    .container-header-slider {
+        margin-top: 90px;
+    }
+    .header-slider {
+        height: 160px;
+        width: calc(100% - 80px);
+    }
+    .header-slider div {
+        display: flex;
+        width: fit-content !important;
+    }
+    .header-slider .content-slider {
+        width: fit-content !important;
+        margin: 0 10px;
+    }
+    .desktop-text-header-slider {
+        display: flex;
+        flex-direction: column;
+    }
+    .header-slider .content-slider h3 {
+        font-size: 20px;
+    }
+    .header-slider .content-slider p {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    .mobile-text-header-slider {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .header-slider {
+        width: calc(100% - 160px);
+    }
+    .header-slider .content-slider {
+        margin: 0 3vw;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .header-slider {
+        width: calc(100% - 300px);
+    }
+    .separation-desktop {
+        border: 1px solid rgb(192, 183, 232, 0.33);
+        height: 100px;
+        margin-left: 5vw;
+    }
+    .slick-initialized .slick-slide {
+        display: flex !important;
+    }
+    .icon-slider-header {
+        margin-right: 8px;
+    }
+}

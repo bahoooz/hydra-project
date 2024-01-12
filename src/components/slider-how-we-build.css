@@ -1,0 +1,116 @@
+.content-slider-how-we-build div:hover {
+    transform: scale(1.05);
+    transition: .3s;
+}
+
+/* --------------------- */
+
+.container-slider-how-we-build {
+    margin-bottom: 80px;
+}
+
+.slider-how-we-build {
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 30px;
+}
+
+.slider-how-we-build .content-slider-how-we-build {
+    height: fit-content;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 18px;
+}
+.slider-how-we-build .content-slider-how-we-build p {
+    margin-top: 40px;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 700;
+}
+.content-slider-how-we-build div {
+    outline: 15px solid rgb(13, 13, 13, 0.32);
+    font-size: 64px;
+    background: var(--gradient-color-section-3);
+    width: 160px;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.content-slider-how-we-build div span {
+    color: var(--color-text-btn);
+    font-weight: 700;
+}
+
+.slider-how-we-build .slick-prev::before, .slider-how-we-build .slick-next::before {
+    display: none;
+}
+
+.img-slider-hwb {
+    display: none;
+}
+
+.arrow-slider-icon-hwb {
+    display: none;
+}
+
+@media screen and (min-width: 905px) {
+    .container-slider-how-we-build {
+        position: relative;
+        margin-bottom: 110px;
+    }
+    .img-slider-hwb {
+        display: block;
+        position: absolute;
+        height: 150px;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+    }
+    .arrow-slider-icon-hwb {
+        display: block;
+        font-size: 40px;
+        color: var(--icon-color);
+    }
+    .content-slider-how-we-build p {
+        display: flex;
+        align-items: start;
+        gap: 10px;
+        margin-left: -15px;
+    }
+    .slider-how-we-build .content-slider-how-we-build p {
+        text-align: start;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .content-slider-how-we-build p {
+        gap: 15px;
+    }
+    .img-slider-hwb {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .container-slider-how-we-build {
+        display: flex;
+        justify-content: center;
+    }
+    .container-slider-how-we-build .slick-initialized .slick-slide {
+        width: fit-content !important;
+    }
+    
+    .container-slider-how-we-build .slick-slider .slick-track {
+        display: flex;
+        justify-content: center;
+        gap: 7vw;
+    }
+}
+

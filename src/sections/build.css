@@ -1,0 +1,116 @@
+#build {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 60px;
+}
+#build h2 {
+  text-transform: uppercase;
+  font-size: 26px;
+  margin-bottom: 38px; 
+  line-height: 50px;
+}
+#build span {
+  font-weight: 300;
+}
+#techno-and-hw {
+  width: 90%;
+  height: 150px;
+  margin-top: 56px;
+  background-image: url("../assets/img-div-build.png");
+  background-position-y: center;
+  background-position-x: 25%;
+  background-size: cover;
+  border-radius: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#techno-and-hw h3 {
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: 40px;
+}
+#techno-and-hw span {
+  font-size: 24px;
+}
+
+.desktop-about-content {
+  display: none;
+}
+
+@media (min-width: 905px) {
+  #build {
+    padding: 0 40px;
+  }
+  #techno-and-hw {
+    width: 100%;
+    margin-top: 100px;
+  }
+  #build h2 {
+    font-size: 36px;
+    line-height: initial;
+  }
+  .desktop-about-content {
+    display: flex;
+    align-items: start;
+    margin-bottom: 100px;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 950px;
+  }
+  .left-content-desktop-about .desktop-title {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: start;
+  }
+  .left-content-desktop-about .desktop-title span {
+    position: relative;
+  }
+  #build .container-desktop-desc {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: justify;
+    width: 50%;
+  }
+  .arrow-icon-about {
+    font-size: 70px;
+    color: var(--icon-color);
+    position: absolute;
+    top: 50%;
+    left: 300px;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  #build {
+    padding: 0 80px;
+  }
+  .desktop-about-content {
+    width: calc(100vw - 400px);
+    justify-content: space-between;
+    max-width: none;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  #build {
+    padding: 0 150px;
+  }
+  #techno-and-hw {
+    margin-top: 115px;
+  }
+  .desktop-about-content {
+    width: calc(100vw - 500px);
+  }
+}
+
+@media screen and (min-width: 1680px) {
+  .desktop-about-content {
+    width: calc(100vw - 700px);
+  }
+}

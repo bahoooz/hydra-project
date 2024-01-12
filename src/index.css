@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* --------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* --------------------- */
+
+:root {
+  --bg-color: #302c42;
+  --color-text-btn: #343045;
+  --color-text: #ffffff;
+  --gradient-color: linear-gradient(
+    90deg,
+    rgba(192, 183, 232, 1) 0%,
+    rgba(129, 118, 175, 1) 100%
+  );
+  --gradient-btn-color: linear-gradient(
+    90deg,
+    rgba(129, 118, 175, 1) 0%,
+    rgba(192, 183, 232, 1) 100%
+  );
+  --gradient-color-section-1: radial-gradient(
+    circle,
+    rgba(58, 52, 86, 1) 0%,
+    rgba(33, 30, 46, 1) 100%
+  );
+  --color-icons: #c0b7e8;
+  --gradient-color-section-2: radial-gradient(
+    circle,
+    rgba(67, 61, 96, 1) 0%,
+    rgb(27, 25, 37) 100%
+  );
+  --gradient-color-section-3: linear-gradient(
+    251deg,
+    #c0b7e8 12.87%,
+    #8176af 89.33%
+  );
+  --gradient-color-section-4: radial-gradient(
+    50% 50% at 50% 50%,
+    #403a5f 0%,
+    #211e2e 100%
+  );
+  --gradient-btn-burger-menu: linear-gradient(
+    90deg,
+    #c0b7e8 -15.79%,
+    #8176af 100%
+  );
+  overflow-x: hidden;
+  --icon-color: #c0b7e8;
+}
+
+/* --------------------- */
+
+body {
+  background: var(--bg-color);
+  max-width: 100vw;
+  overflow: hidden;
+  position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+li,
+a {
+  color: white;
+  text-decoration: none;
+}
+
+/* --------------------- */
+
+@media screen and (min-width: 1280px) {
+  body {
+    overflow: visible;
+  }
+}
+
+/* --------------------- */
+
+@keyframes apparition {
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* --------------------- */
+
+.img-header {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: apparition 0.4s 0.2s ease-out forwards;
+}
+
+#header h1 {
+  opacity: 0;
+  transform: translateX(-30px);
+  animation: apparition 0.4s 0.4s ease-out forwards;
+}
+
+.button-arrow {
+  opacity: 0;
+  transform: translateX(-30px);
+  animation: apparition 0.4s 0.6s ease-out forwards;
+}
+
+@media screen and (min-width: 905px) {
+  #header h1 {
+    opacity: 0;
+    transform: translateX(-30px);
+    animation: apparition 0.4s 0.2s ease-out forwards;
+  }
+  #header p {
+    opacity: 0;
+    transform: translateX(-30px);
+    animation: apparition 0.4s 0.4s ease-out forwards;
+  }
+  .button-arrow {
+    opacity: 0;
+    transform: translateX(-30px);
+    animation: apparition 0.4s 0.6s ease-out forwards;
+  }
+  .img-header {
+    opacity: 0;
+    transform: translateX(-30px);
+    animation: apparition 0.4s 0.8s ease-out forwards;
+  }
+  .container-header-slider {
+    opacity: 0;
+    transform: translateX(-30px);
+    animation: apparition 0.4s 1.2s ease-out forwards;
+  }
+}

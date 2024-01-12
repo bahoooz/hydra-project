@@ -1,0 +1,240 @@
+.networks-hydra button:hover {
+  transition: .3s;
+  transform: scale(1.1);
+}
+
+.networks-hydra li a:hover {
+  background: #957ff9;
+}
+
+.logo-footer:hover {
+  opacity: .4;
+  transition: .3s;
+  transform: rotate(33deg) scale(1.2);
+}
+
+.content-nav-footer li:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 5px;
+}
+
+/* --------------------- */
+
+footer {
+  margin-top: 80px;
+}
+
+.content-nav-footer {
+  display: none;
+}
+
+.logo-footer {
+  width: 185px;
+  margin-bottom: 50px;
+}
+
+.container-primary-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.container-secondary-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.networks-hydra {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.networks-hydra h4 {
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.networks-hydra ul {
+  display: flex;
+  list-style-type: none;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.networks-hydra ul li a{
+  background: var(--icon-color);
+  border-radius: 50%;
+  display: flex;
+  padding: 6px;
+}
+
+.icon-footer {
+  font-size: 22px;
+  color: var(--bg-color);
+}
+
+.networks-hydra button {
+  height: 50px;
+  width: 100%;
+  border-radius: 40px;
+  background: var(--gradient-btn-color);
+  text-transform: uppercase;
+  font-weight: 700;
+  border: none;
+  font-size: 14px;
+  color: var(--color-text-btn);
+  cursor: pointer;
+}
+
+.separation-2-footer {
+  height: 1px;
+  width: 60%;
+  background: linear-gradient(
+    90deg,
+    rgba(52, 48, 69, 1) 0%,
+    rgba(192, 183, 232, 1) 31%,
+    rgba(129, 118, 175, 1) 65%,
+    rgba(52, 48, 69, 1) 100%
+  );
+  margin: 60px 0 40px;
+}
+
+.container-secondary-footer {
+  margin-bottom: 90px;
+}
+
+.container-secondary-footer span {
+  max-width: 80%;
+  font-size: 16px;
+  text-align: center;
+  line-height: 40px;
+  font-weight: 700;
+}
+
+.deco-effect-mobile-footer {
+  position: absolute;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 10%;
+}
+
+.deco-effect-tablet-footer {
+  display: none;
+}
+
+.deco-effect-desktop-footer {
+  display: none;
+}
+
+@media screen and (min-width: 905px) {
+  .deco-effect-mobile-footer {
+    display: none;
+  }
+  .deco-effect-tablet-footer {
+    display: block;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 10%;
+    position: absolute;
+  }
+  .networks-hydra h4 {
+    font-size: 24px;
+  }
+  .networks-hydra ul {
+    gap: 25px;
+  }
+  .networks-hydra ul li a {
+    padding: 8px;
+  }
+  .icon-footer {
+    font-size: 26px;
+  }
+  .networks-hydra button {
+    font-size: 16px;
+  }
+  .container-secondary-footer {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  footer {
+    padding: 0 150px;
+    margin-top: 120px;
+  }
+  .deco-effect-tablet-footer {
+    display: none;
+  }
+  .deco-effect-desktop-footer {
+    display: block;
+    width: 130%;
+    transform: translate(-50%, -50%);
+    left: -20%;
+    top: -120%;
+    position: absolute;
+    transform: rotate(5deg);
+    z-index: -1;
+  }
+  .content-nav-footer {
+    display: flex;
+    gap: 40px;
+  }
+  .content-nav-footer .separation-footer {
+    width: 6px;
+    background: linear-gradient(
+      0deg,
+      rgba(52, 48, 69, 1) 0%,
+      rgba(192, 183, 232, 1) 31%,
+      rgba(129, 118, 175, 1) 65%,
+      rgba(52, 48, 69, 1) 100%
+    );
+  }
+  .content-nav-footer ul {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .content-nav-footer ul li {
+    list-style-type: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .container-primary-footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .networks-hydra {
+    align-items: start;
+  }
+  .networks-hydra button {
+    width: 80%;
+  }
+  .separation-2-footer {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1680px) {
+  .content-nav-footer {
+    display: flex;
+    height: fit-content;
+    gap: 80px;
+  }
+  .container-secondary-footer span br {
+    display: none;
+  }
+  .deco-effect-desktop-footer {
+    left: -20%;
+    top: -160%;
+    transform: rotate(7deg);
+  }
+}
