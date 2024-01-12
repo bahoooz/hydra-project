@@ -20,16 +20,16 @@ const BurgerMenu = () => {
       </div>
       <ul>
         <li>
-          <a href="">About</a>
+          <a href="#introduction-about">About</a>
         </li>
         <li>
-          <a href="">Services</a>
+          <a href="#build">Services</a>
         </li>
         <li>
-          <a href="">Technologies</a>
+          <a href="#techno-and-hw">Technologies</a>
         </li>
         <li>
-          <a href="">How To</a>
+          <a href="how-we-build">How To</a>
         </li>
       </ul>
       <div className="container-btn-burger-menu">
